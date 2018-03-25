@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип проекта Девайс">
+        <img src="img/logo.png" width="163" height="36" alt="Логотип проекта Девайс">
       </a>
       <form class="search" action="url" method="get">
         <button class="search-button"> </button>
@@ -18,7 +20,8 @@
       </form>
       <ul class="user-navigation">
         <li class="login-link">
-          <a class="login-link" href="login.html">Войти</a></li>
+          <a class="login-link" href="login.html">Войти</a>
+        </li>
         <li>
           <a href="compare.html">Сравнить</a>
         </li>
@@ -29,47 +32,45 @@
       <ul class="site-navigation">
         <li>
           <details>
-            <summary>
-              <a href="catalog.html">Каталог товаров</a>
+            <summary class="catalog">
+              <a href="catalog.html" class="header-menu">Каталог товаров</a>
             </summary>
             <ul class="catalog-menu">
-              <li class="first-column">
+              <li class="catalog-menu mimi first-column">
                 <a href="virtual-reality.html">Виртуальная реальность</a>
               </li>
-              <li class="first-column">
+              <li class="catalog-menu first-column">
                 <a href="monopod-for-selfy.html">Моноподы для селфи</a>
               </li>
-              <li class="first-column">
-                <a href="action-camera.html">Экшн камеры</a>
+              <li class="catalog-menu first-column">
+                <a href="action-camera.html">Экшн-камеры</a>
               </li>
-              <li class="second-column">
-                <a href="fitness-bracelets.html">Фитнес браслеты</a>
+              <li class="catalog-menu second-column">
+                <a href="fitness-bracelets.html">Фитнес-браслеты</a>
               </li>
-              <li class="second-column">
+              <li class="catalog-menu second-column">
                 <a href="smart-watch.html">Умные часы</a>
               </li>
-              <li class="third-column">
+              <li class="catalog-menu third-column">
                 <a href="quadrocopter.html">Квадрокоптеры</a>
               </li>
             </ul>
           </details>
         </li>
         <li>
-          <a href="delivery.html">Доставка</a>
+          <a href="delivery.html" class="header-service-menu">Доставка</a>
         </li>
         <li>
-          <a href="guarantee.html">Гарантия</a>
+          <a href="guarantee.html" class="header-service-menu">Гарантия</a>
         </li>
         <li>
-          <a href="contacts.html">Контакты</a>
+          <a href="contacts.html" class="header-service-menu">Контакты</a>
         </li>
       </ul>
     </nav>
-
-
   </header>
   <main class="container">
-    <h1 class="visually-hidden">Device shop</h1>
+    <h1 class="visually-hidden">Хит продаж</h1>
     <section class="slider-goods">
       <label>
         <input type="radio" name="monopod" value="" checked>
@@ -82,115 +83,109 @@
       </label>
     </section>
     <section class="goods">
-
       <img src="img/monopod.png" width="384" height="486" alt="Монопод для селфи">
       <h2 class="number-goods">01</h2>
-      <h3 class="goods-1">Делай селфи,
+      <h3 class="popular-caption goods-1">Делай селфи,
         <br>как Бен Стиллер!</h3>
       <p>Самая длинная палка для селфи доступна в нашем магазине Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
       </p>
-      <p>
+      <p class="more">
         <a href="goods-1.html">Подробнее</a>
       </p>
-      <table class="detail-goods-1">
-        <tr class="summary-goods-1">
-          <td>8.5м</td>
-          <td>5 кг</td>
-          <td>Карбон</td>
+      <table class="detail-goods">
+        <tr class="summary-goods">
+          <td class="summary-goods">8,5м</td>
+          <td class="summary-goods">5 кг</td>
+          <td class="summary-goods">Карбон</td>
         </tr>
-        <tr class="title-table-goods-1">
-          <td>Длина палки</td>
-          <td>Вес палки</td>
-          <td>Материал</td>
+        <tr class="table-goods">
+          <td class="table-goods">Длина палки</td>
+          <td class="table-goods">Вес палки</td>
+          <td class="table-goods">Материал</td>
         </tr>
       </table>
-
       <img src="img/fitness-bracelet.png" width="345" height="485" alt="Фитнес браслет">
       <h2 class="number-goods">02</h2>
-      <h3 class="goods-2">Худеем
+      <h3 class="popular-caption goods-2">Худеем
         <br> правильно!</h3>
       <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-      <p>
+      <p class="more">
         <a href="goods-2.html">Подробнее</a>
       </p>
-      <table class="detail-goods-2">
-        <tr class="summary-goods-2">
-          <td>48 часов</td>
+      <table class="detail-goods">
+        <tr class="summary-goods">
+          <td class="summary-goods">48 часов</td>
         </tr>
-        <tr class="title-table-goods-2">
-          <td>Без подзарядки</td>
+        <tr class="table-goods">
+          <td class="table-goods">Без подзарядки</td>
         </tr>
       </table>
-
       <img src="img/quadrupter.png" width="526" height="334" alt="Квадрокоптер">
       <h2 class="number-goods">03</h2>
-      <h3 class="goods-2">Порхает как бабочка, жалит как пчела!</h3>
+      <h3 class="popular-caption goods-3">Порхает как бабочка, жалит как пчела!</h3>
       <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
       </p>
-      <p>
+      <p class="more">
         <a href="goods-3.html">Подробнее</a>
       </p>
-      <table class="detail-goods-3">
-        <tr class="summary-goods-3">
-          <td>800 м</td>
-          <td>50 м</td>
+      <table class="detail-goods">
+        <tr class="summary-goods">
+          <td class="summary-goods">800 м</td>
+          <td class="summary-goods">50 м</td>
         </tr>
-        <tr class="title-table-goods-3">
-          <td>Дальность полета</td>
-          <td>Радиус поражения</td>
+        <tr class="table-goods">
+          <td class="table-goods">Дальность полета</td>
+          <td class="table-goods">Радиус поражения</td>
         </tr>
       </table>
-
-
     </section>
     <section class="product-categories">
       <h2 class="visually-hidden">Популярные товары</h2>
-      <ul class="product-categories-icons">
-        <li class="first-column">
+      <ul class="popular-goods">
+        <li class="popular-good">
           <a href="virtual-reality.html">Виртуальная реальность</a>
         </li>
-        <li class="first-column">
+        <li class="popular-goods">
           <a href="monopod-for-selfy.html">Моноподы для селфи</a>
         </li>
-        <li class="first-column">
+        <li class="popular-goods">
           <a href="action-camera.html">Экшн камеры</a>
         </li>
-        <li class="second-column">
+        <li class="popular-goods">
           <a href="fitness-bracelets.html">Фитнес браслеты</a>
         </li>
-        <li class="second-column">
+        <li class="popular-goods">
           <a href="smart-watch.html">Умные часы</a>
         </li>
-        <li class="third-column">
+        <li class="popular-goods">
           <a href="quadrocopter.html">Квадрокоптеры</a>
         </li>
       </ul>
       </ul>
     </section>
-
     <section>
       <h2 class="visually-hidden">Сервис</h2>
-      <label>Доставка
+      <label><button class="services delivery" type="button">Доставка</button>
         <input type="radio" name="delivery" value="" checked>
       </label>
-      <label>Гарантия
+      <label><button class="services guarantee" type="button">Гарантия</button>
         <input type="radio" name="guarantee" value="">
       </label>
-      <label>Кредит
+      <label><button class="services credit" type="button">Кредит</button>
         <input type="radio" name="credit" value="">
       </label>
-      <div class="delivery">
-        <h3>Доставка</h3>
+      <div class="service">
+        <h3 class="service-describtion">Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
           его на ваш этаж.</p>
       </div>
-      <div class="guarantee">
-        <h3>Гарантия</h3>
+      <div class="service">
+        <h3 class="service-describtion">Гарантия</h3>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
           <br> Товар, не дом, конечно же.</p>
       </div>
-      <div class="credit">
-        <h3>Кредит</h3>
+      <div class="service">
+        <h3 class="service-describtion">Кредит</h3>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные
           для нашего банка, разумеется..</p>
       </div>
@@ -212,10 +207,10 @@
     </section>
     <section>
       <ul class="partners">
-        <li class="icon-dji"></li>
-        <li class="icon-spgadgets"></li>
-        <li class="icon-goPro"></li>
-        <li class="icon-vive"></li>
+        <li class="icon-dji">dji</li>
+        <li class="icon-spgadgets">spgadgets</li>
+        <li class="icon-goPro">goPro</li>
+        <li class="icon-vive">vive</li>
       </ul>
     </section>
     <section class="about-us">
@@ -229,7 +224,7 @@
           <li>ЖелДорЭкспедиция</li>
         </ul>
       </div>
-      <button class="about-us" type="button">Подробнее о нас</button>
+      <button class="about-us-button" type="button">Подробнее о нас</button>
     </section>
     <section class="contants">
       <h2>Контакты</h2>
@@ -240,14 +235,14 @@
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-header-logo">
-      <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип проекта Девайс">
+    <a class="main-footer-logo">
+      <img src="img/logo-yellow.png" width="163" height="36" alt="Логотип проекта Девайс">
     </a>
-
     <div class="footer-user-navigation">
       <ul class="footer-list-user-navigation">
         <li class="login-link">
-          <a class="login-link" href="login.html">Войти</a></li>
+          <a class="login-link" href="login.html">Войти</a>
+        </li>
         <li>
           <a href="compare.html">Сравнить</a>
         </li>
@@ -257,13 +252,11 @@
       </ul>
     </div>
     <div class="footer-contacts">
-      <ul>
-        <li>г. Москва, ул. Строителей, 15</li>
-        <li>Тел.: +7 (495) 495-95-95</li>
-      </ul>
+      <p>г. Москва, ул. Строителей, 15</p>
+      <p>Тел.: +7 (495) 495-95-95</p>
     </div>
-    <div class="footer-servisec">
-      <ul>
+    <div class="footer-services">
+      <ul class="footer-list-services">
         <li>
           <a href="delivery.html">Доставка</a>
         </li>

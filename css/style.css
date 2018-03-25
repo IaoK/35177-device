@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroylight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensanslight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #0f0f0f;
+    background-color: #ffffff;
+    background-position: top center;
+}
+a {
+    text-decoration: none;
+}
+.main-header {
+    background-color: rgba(240, 197, 46, 0.5);
+}
+.main-footer {
+    background-color: rgb(70, 70, 70);
+}
+.services,
+.catalog,
+.header-service-menu,
+.more,
+.popular-goods,
+.about-us-button,
+.write-us {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.popular-goods {
+    text-transform: none;
+    letter-spacing: normal;
+}
+.catalog-menu,
+.site-navigation,
+.user-navigation,
+.popular-goods,
+.partners,
+.carriers {
+    list-style: none;
+}
+.more a,
+.site-navigation a,
+.user-navigation a,
+.popular-goods a,
+.footer-list-services a,
+.footer-list-user-navigation a {
+    color: #0f0f0f;
+}
+.user-navigation a:hover,
+.site-navigation a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.user-navigation a:focus,
+.site-navigation a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+.number-goods{
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 179.2px;
+    line-height: 179.2px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(240, 197, 46, 0.5);
+}
+.popular-caption {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 47px;
+    line-height: 56px;
+}
+.write-us,
+.about-us-button,
+.services {
+    width: 160px;
+    height: 40px;
+    outline: none;
+    display: inline-block;
+    border: 0px;
+    background: white;
+    padding: 5px;
+    background-image: linear-gradient(transparent 43%, rgba(240, 197, 46, 1) 43%, rgba(240, 197, 46, 1) 57%, transparent 57%);
+}
+.about-us-button,
+.write-us {
+    width: 260px;
+    height: 40px;
+}
+.more a{
+    padding: 14px 43px;
+    background-image: linear-gradient(transparent 43%, rgba(240, 197, 46, 1) 43%, rgba(240, 197, 46, 1) 57%, transparent 57%);
+}
+.more a:hover  {
+    padding: 14px 43px;
+    background-color: rgba(240, 197, 46, 1);
+    color: rgba(0, 0, 0, 1);
+}
+.more a:focus {
+    padding: 14px 43px;
+    background-color: rgba(240, 197, 46, 1);
+    color: rgba(0, 0, 0, 0.3);
+}
+.main-header-logo:hover {
+    opacity: 0.6;
+}
+.main-header-logo:focus {
+    opacity: 0.3;
+}
+.main-footer-logo:hover {
+    opacity: 0.6;
+}
+.main-footer-logo:focus {
+    opacity: 0.3;
+}
+.summary-goods {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+}
+.table-goods {
+    font-size: 13px;    
+    font-weight: 20px;
+}
+.service-describtion,
+.about-us h2,
+.contants h2 {
+    font-family:  'Gilroy', Arial, sans-serif;
+    font-size: 47px;    
+    font-weight: 48px;
+}
+
+.services:hover {
+    background-color: rgba(240, 197, 46, 1);
+    color: rgba(0, 0, 0, 1);
+
+}
+.services:focus {
+    width: 278px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(245, 225, 132, 1);
+    background-image: none;
+}
+.carriers {
+    font-family:  'Gilroy', Arial, sans-serif;
+    font-size: 16px;    
+    font-weight: 40px;
+    font-weight: bold;
+}
+.about-us-button:focus,
+.write-us:focus {
+    background-color: rgba(240, 197, 46, 1);
+    color: rgba(0, 0, 0, 0.3);
+} 
+.about-us-button:hover,
+.write-us:hover {
+    background-color: rgba(240, 197, 46, 1);
+    color: rgba(0, 0, 0, 1);
+} 
