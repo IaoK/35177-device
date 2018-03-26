@@ -50,7 +50,11 @@ a {
 .more,
 .popular-goods,
 .about-us-button,
-.write-us {
+.write-us,
+.footer-list-services,
+.catalog-item a h3,
+.filter-name,
+.filter-button {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -59,7 +63,9 @@ a {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.popular-goods {
+.popular-goods,
+.catalog-item a h3,
+.filter-name {
     text-transform: none;
     letter-spacing: normal;
 }
@@ -68,25 +74,35 @@ a {
 .user-navigation,
 .popular-goods,
 .partners,
-.carriers {
+.carriers,
+.footer-list-user-navigation,
+.footer-list-services,
+.breadcrumbs,
+.color-goods,
+.bluetooth-option,
+.catalog-list,
+.pagination-list {
     list-style: none;
+}
+.user-navigation a:focus,
+.site-navigation a:focus,
+.pagination-item a {
+    color: rgba(0, 0, 0, 0.3);
 }
 .more a,
 .site-navigation a,
 .user-navigation a,
 .popular-goods a,
 .footer-list-services a,
-.footer-list-user-navigation a {
+.footer-list-user-navigation a,
+.pagination-item-current a {
     color: #0f0f0f;
 }
 .user-navigation a:hover,
 .site-navigation a:hover {
     color: rgba(0, 0, 0, 0.6);
 }
-.user-navigation a:focus,
-.site-navigation a:focus {
-    color: rgba(0, 0, 0, 0.3);
-}
+
 .number-goods{
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 179.2px;
@@ -101,7 +117,8 @@ a {
 }
 .write-us,
 .about-us-button,
-.services {
+.services,
+.filter-button {
     width: 160px;
     height: 40px;
     outline: none;
@@ -109,6 +126,7 @@ a {
     border: 0px;
     background: white;
     padding: 5px;
+    color: rgba(0, 0, 0, 1);
     background-image: linear-gradient(transparent 43%, rgba(240, 197, 46, 1) 43%, rgba(240, 197, 46, 1) 57%, transparent 57%);
 }
 .about-us-button,
@@ -116,17 +134,38 @@ a {
     width: 260px;
     height: 40px;
 }
-.more a{
+.in-card,
+.more a {
     padding: 14px 43px;
     background-image: linear-gradient(transparent 43%, rgba(240, 197, 46, 1) 43%, rgba(240, 197, 46, 1) 57%, transparent 57%);
+    color: rgba(0, 0, 0, 1);
 }
-.more a:hover  {
+.compare {
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: lighter;
+    color: rgb(70, 70, 70);
+    text-transform: none;
+    letter-spacing: normal;
+}
+.in-card a:hover,
+.more a:hover {
     padding: 14px 43px;
+    background-color: rgba(240, 197, 46, 1);
+    color: rgba(0, 0, 0, 1);
+}
+.filter-button:hover,
+.in-card a:hover {
     background-color: rgba(240, 197, 46, 1);
     color: rgba(0, 0, 0, 1);
 }
 .more a:focus {
     padding: 14px 43px;
+    background-color: rgba(240, 197, 46, 1);
+    color: rgba(0, 0, 0, 0.3);
+}
+.filter-button:focus,
+.in-card a:focus {
     background-color: rgba(240, 197, 46, 1);
     color: rgba(0, 0, 0, 0.3);
 }
@@ -149,14 +188,15 @@ a {
 }
 .table-goods {
     font-size: 13px;    
-    font-weight: 20px;
+    line-height: 20px;
 }
 .service-describtion,
 .about-us h2,
-.contants h2 {
+.contants h2,
+.page-title {
     font-family:  'Gilroy', Arial, sans-serif;
     font-size: 47px;    
-    font-weight: 48px;
+    line-height: 48px;
 }
 
 .services:hover {
@@ -172,18 +212,70 @@ a {
     background-image: none;
 }
 .carriers {
-    font-family:  'Gilroy', Arial, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 16px;    
-    font-weight: 40px;
+    line-height: 40px;
     font-weight: bold;
 }
+.breadcrumbs,
+.breadcrumbs a {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.container h2,
+.pagination-item {
+    font-family: 'Gilroy', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+.color-goods,
+.bluetooth-option {
+    font-size: 14px;
+    line-height: 40px; 
+}
+
+.sort,
+.catalog-item b {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: rgb(70, 70, 70);
+}
+.type-sort,
+.popular-sort {
+     color: rgba(0, 0, 0, 0.3);
+}
+.in-card:focus,
 .about-us-button:focus,
 .write-us:focus {
     background-color: rgba(240, 197, 46, 1);
     color: rgba(0, 0, 0, 0.3);
 } 
+.in-card:hover,
 .about-us-button:hover,
 .write-us:hover {
     background-color: rgba(240, 197, 46, 1);
     color: rgba(0, 0, 0, 1);
 } 
+.footer-contacts,
+.footer-list-user-navigation a:hover,
+.footer-list-services a,
+.login-link-footer a:hover {
+    color: rgba(255, 255, 255, 1)
+}
+.footer-list-user-navigation a,
+.login-link-footer {
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer-list-user-navigation a:focus,
+.footer-list-services a:focus,
+.login-link-footer a:focus,
+.logout-footer a {
+    color: rgba(255, 255, 255, 0.3);
+}
+.footer-list-services a:hover {
+    color: rgba(255, 255, 255, 0.6)
+}
