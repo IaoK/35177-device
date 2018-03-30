@@ -39,6 +39,43 @@ a {
     text-decoration: none;
 }
 .main-header {
+    margin-bottom: 0px;
+  
+    /* Временно для сетки */
+    min-height: 175px;
+  }
+  .main-navigation {
+    /* Временно для сетки */
+    min-height: 175px;
+    background-color: transparent;
+    flex-direction: column;
+   }
+   .main-header-logo {
+    width: 163px;
+    height: 36px;
+     }
+  
+  .site-navigation {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+  
+  .user-navigation {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+    
+.main-header {
     background-color: rgba(240, 197, 46, 0.5);
 }
 .main-footer {
@@ -103,13 +140,7 @@ a {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.number-goods{
-    font-family: 'Gilroy', Arial, sans-serif;
-    font-size: 179.2px;
-    line-height: 179.2px;
-    color: rgb(255, 255, 255);
-    background-color: rgba(240, 197, 46, 0.5);
-}
+
 .popular-caption {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 47px;
@@ -278,4 +309,11 @@ a {
 }
 .footer-list-services a:hover {
     color: rgba(255, 255, 255, 0.6)
+}
+.number-goods {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 179.2px;
+    line-height: 179.2px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(240, 197, 46, 0.5);
 }
